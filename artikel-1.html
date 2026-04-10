@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sudah Rajin Promosi tapi Leads Belum Stabil? Ini Akar Masalahnya — MISI</title>
+<meta name="description" content="Cari tahu penyebab leads dan penjualan Anda tidak stabil meski sudah rajin promosi. Temukan cara merapikan strategi marketing agar lebih fokus dan terarah untuk business owner.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+<style>
+  /* Menggunakan Skema Warna & Variabel dari Index LP [cite: 2, 3, 4] */
+  :root {
+    --charcoal: #1a1a1a;
+    --teal: #1a5f7a;
+    --teal-dark: #134a61;
+    --teal-muted: #e8f4f9;
+    --lime: #3dce6a;
+    --off-white: #f8f7f4;
+    --text-body: #3a3a3a;
+    --text-muted: #6a6a6a;
+    --mid-gray: #e5e2dc;
+    --white: #ffffff;
+    --radius-lg: 16px;
+    --max-w: 800px; /* Dipersempit agar nyaman dibaca sebagai artikel [cite: 9] */
+  }
+
+  /* Reset & Global Styles [cite: 5, 7, 8] */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--off-white); color: var(--text-body); line-height: 1.8; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3 { font-family: 'Inter', sans-serif; color: var(--charcoal); line-height: 1.3; margin-bottom: 24px; }
+  a { color: var(--teal); text-decoration: underline; transition: color 0.2s; }
+  a:hover { color: var(--teal-dark); }
+
+  /* Navigation Bar [cite: 10, 11, 12, 13] */
+  nav { background: var(--white); border-bottom: 1px solid var(--mid-gray); position: sticky; top: 0; z-index: 100; padding: 0 40px; }
+  .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .nav-logo img { height: 32px; width: auto; display: block; }
+
+  /* Article Layout */
+  .article-container { max-width: var(--max-w); margin: 60px auto; padding: 0 24px; }
+  .article-header { margin-bottom: 40px; }
+  .category-tag { color: var(--teal); font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; }
+  .article-title { font-size: clamp(26px, 4vw, 40px); font-weight: 800; letter-spacing: -0.02em; margin-top: 12px; }
+  
+  /* CSS Khusus untuk Gambar Ilustrasi */
+  .featured-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 32px auto 0 auto;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--mid-gray);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  .content-section { margin-top: 40px; }
+  .content-section p { margin-bottom: 24px; font-size: 17px; }
+  
+  /* List Styling - Meniru pola Deliverable & Problem List [cite: 68, 117] */
+  .article-list { list-style: none; margin: 32px 0; background: var(--white); padding: 32px; border-radius: var(--radius-lg); border: 1px solid var(--mid-gray); }
+  .article-list li { display: flex; gap: 16px; margin-bottom: 20px; font-size: 16px; align-items: flex-start; }
+  .list-num { width: 26px; height: 26px; background: var(--teal-muted); color: var(--teal); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
+  
+  /* Quote Callout - Meniru pola Punch Line [cite: 87] */
+  .callout { background: var(--charcoal); color: var(--white); padding: 36px; border-radius: var(--radius-lg); margin: 48px 0; position: relative; }
+  .callout p { margin-bottom: 0; font-style: italic; font-size: 18px; opacity: 0.95; }
+
+  /* FAQ Section [cite: 178, 179, 182] */
+  .faq-section { background: var(--white); padding: 80px 24px; border-top: 1px solid var(--mid-gray); }
+  .faq-container { max-width: 700px; margin: 0 auto; }
+  .faq-item { border-bottom: 1px solid var(--mid-gray); }
+  .faq-question { width: 100%; text-align: left; background: none; border: none; padding: 22px 0; font-family: 'DM Sans'; font-weight: 700; font-size: 16px; cursor: pointer; display: flex; justify-content: space-between; color: var(--charcoal); }
+  .faq-answer { display: none; padding-bottom: 22px; color: var(--text-muted); font-size: 15px; }
+  .faq-item.open .faq-answer { display: block; }
+
+  /* CTA Button [cite: 19, 20] */
+  .btn-primary { background: var(--teal); color: var(--white); padding: 16px 32px; border-radius: 10px; font-weight: 600; text-decoration: none; display: inline-block; transition: background 0.2s; border: none; font-size: 15px; cursor: pointer; }
+  .btn-primary:hover { background: var(--teal-dark); }
+
+  /* Footer [cite: 193, 203] */
+  footer { background: #111111; padding: 60px 40px; color: rgba(255,255,255,0.3); text-align: center; }
+  .footer-logo { height: 30px; margin-bottom: 24px; filter: brightness(0) invert(1); opacity: 0.8; }
+
+  @media (max-width: 600px) {
+    .article-title { font-size: 26px; }
+    nav { padding: 0 20px; }
+    .article-container { margin: 40px auto; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <a href="index.html"><img src="misi-logo-final.png" alt="MISI logo"></a>
+    </div>
+    <a href="index.html" style="text-decoration: none; font-size: 13px; font-weight: 700; text-transform: uppercase; color: var(--teal); letter-spacing: 0.05em;">&larr; Back to Home</a>
+  </div>
+</nav>
+
+<article class="article-container">
+  <header class="article-header">
+    <span class="category-tag">Marketing Strategy</span>
+    <h1 class="article-title">Sudah Rajin Promosi tapi Leads Belum Stabil? Ini Akar Masalahnya</h1>
+    
+    <img src="artikel1-ilustrasi.png" alt="Ilustrasi Leads Tidak Stabil" class="featured-image">
+  </header>
+
+  <div class="content-section">
+    <p>Sebagai seorang business owner, Anda mungkin sudah melakukan segalanya. Anda aktif memposting konten di Instagram dan TikTok, rutin broadcast di WhatsApp, hingga menjalankan campaign di marketplace. Di permukaan, bisnis terlihat sibuk. Namun, rekap data bulanan menunjukkan realitas pahit: <strong>leads dan penjualan tidak stabil.</strong></p>
+    
+    <p>Bulan ini angka penjualan melonjak, bulan depan kembali sepi. Anda terjebak dalam siklus trial and error yang melelahkan. Mengapa hasilnya masih terasa seperti kebetulan?</p>
+  </div>
+
+  <h2>Masalahnya Bukan Kurang Promosi, Tapi Kurang Arah</h2>
+  <div class="content-section">
+    <p>Seringkali, saat leads turun, insting pertama owner adalah melipatgandakan promosi: lebih banyak konten, tambah budget iklan, atau coba tren viral. Padahal, masalahnya mungkin bukan kurang promosi. Masalahnya, marketing Anda belum punya arah.</p>
+    <p>Promosi hanyalah kendaraan. Jika strateginya tidak tepat sasaran, seberapa cepat pun Anda menyetir, Anda tidak akan sampai ke tujuan.</p>
+  </div>
+
+  <h2>5 Akar Masalah Utama</h2>
+  <ul class="article-list">
+    <li><span class="list-num">1</span> <div><strong>Target Market Kurang Spesifik:</strong> Mencoba berbicara kepada semua orang membuat pesan Anda tidak relevan bagi siapa pun.</div></li>
+    <li><span class="list-num">2</span> <div><strong>Offer Kurang Kuat:</strong> Jika offer Anda hanya sekadar diskon, pelanggan mudah beralih ke kompetitor. Anda butuh <strong>offer yang lebih kuat.</strong></div></li>
+    <li><span class="list-num">3</span> <div><strong>Pesan Marketing Tidak Jelas:</strong> Konsumen hanya punya waktu 3 detik untuk paham nilai Anda. <strong>Strategi marketing yang lebih jelas</strong> mengutamakan kejelasan di atas kerumitan.</div></li>
+    <li><span class="list-num">4</span> <div><strong>Bingung Prioritas Channel:</strong> Mengelola semua platform sekaligus dengan tim terbatas membuat eksekusi setengah matang.</div></li>
+    <li><span class="list-num">5</span> <div><strong>Kurang Fokus Eksekusi:</strong> Anda butuh <strong>action plan 30 hari yang realistis</strong> agar setiap langkah harian berdampak langsung pada sales.</div></li>
+  </ul>
+
+  <div class="callout">
+    <p>"Banyak owner terlihat aktif, tapi marketingnya rapuh. Sibuk bukan berarti terarah. Ramai bukan berarti bertumbuh."</p>
+  </div>
+
+  <h2>Solusi: AI Sebagai Partner Strategis</h2>
+  <div class="content-section">
+    <p>Gunakan AI bukan sekadar untuk memproduksi ribuan konten instan. AI seharusnya membantu Anda memetakan audiens dan menyusun strategi yang komprehensif. Inilah cara membangun fondasi yang bisa diukur dan diulang.</p>
+  </div>
+
+  <div style="background: var(--teal-muted); padding: 40px; border-radius: var(--radius-lg); border-left: 5px solid var(--teal); margin: 60px 0;">
+    <h3 style="margin-bottom: 12px;">Waktunya Berhenti Menebak</h3>
+    <p style="margin-bottom: 24px;">Jangan biarkan energi dan margin Anda habis di trial and error. Melalui <strong>MISI AI Marketing Strategy Sprint</strong>, kita bangun fondasi marketing yang tajam dalam 3 hari.</p>
+    <a href="https://wa.me/6287737766127" class="btn-primary">Hubungi Kami Untuk Sesi Sprint</a>
+  </div>
+</article>
+
+<section class="faq-section">
+  <div class="faq-container">
+    <h2 style="text-align: center; margin-bottom: 40px;">FAQ Artikel</h2>
+    
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">Apakah masalah saya di strategi atau promosi? <span>+</span></button>
+      <div class="faq-answer">Jika aktivitas sudah tinggi tapi hasil tidak stabil, masalahnya hampir pasti di strategi. Kurang promosi ditandai dengan tidak adanya aktivitas sama sekali.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">Apakah merapikan strategi akan memperlambat jualan? <span>+</span></button>
+      <div class="faq-answer">Tidak. Strategi memastikan budget dan energi Anda memiliki probabilitas keberhasilan yang jauh lebih tinggi daripada sekadar mencoba-coba.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img src="misi-logo-final.png" alt="MISI Logo" class="footer-logo">
+  <p>© 2025 MISI. Advisory, Mentoring & Training for Business Owners.</p>
+  <p style="font-size: 11px; margin-top: 10px; opacity: 0.5;">Clarity over Chaos.</p>
+</footer>
+
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+
+</body>
+</html>
